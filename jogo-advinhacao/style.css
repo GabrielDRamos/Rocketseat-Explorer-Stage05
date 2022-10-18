@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+
+body {
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  
+}
+.hide {
+  display: none;
+}
+
+body, button, input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.advinha {
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  width: 42.8rem;
+  margin-top: -12px;
+  padding: 4.8rem 6.4rem 6.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  text-align: center;
+  
+}
+
+
+.advinha h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  color:#34355B;
+  margin-bottom: 1.6rem
+}
+
+.advinha p, input, button {
+  font-size: 1.6rem;
+}
+
+input, button {
+  border: none;
+  padding: 1.4rem;
+}
+
+.advinha input {
+  background-color: #DCE2E9;
+  width: 6rem;
+  height: 5rem;
+  color: #34355B;
+  line-height: 2rem;
+  border-radius: .4rem 0 0 .4rem
+}
+
+.advinha button {
+  background-color: #7879F1;
+  color: #FFF;
+  border-radius: 0 .4rem .4rem 0;
+  cursor: pointer;
+  transition: background .3s;
+}
+
+.advinha button:hover {
+  background-color: #6e6ee4;
+}
+
+main div  {
+  width: 100%;
+}
+
+.acoes {
+  margin-top: 4.8rem
+}
+
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+
+  margin-bottom: 3.3rem;
+}
