@@ -2,20 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
   background-color: #121214 ;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
-.wrapper{
+h1 {
+  font-size: 88px;
+}
+
+main{
   height: 100vh;
   display: grid;
   place-content: center;
   place-items: center;
 }
 
-.buttons {
+.controls {
   display: flex;
+  gap: 32px;
+  padding: 22px 40px;
+  background: rgba(66, 211, 255, 0.13);;
+  border-radius: 50px;
+}
+
+.btn-sound {
+  position: fixed;
+  bottom: 32px;
+  right: 40px;
 }
