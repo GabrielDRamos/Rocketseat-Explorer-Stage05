@@ -18,23 +18,30 @@ body {
   background-color: var(--bg-color) ;
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
+  display: grid;
+  min-height: 100vh;
+}
+
+main {
+  align-self: end;
+  justify-self: center;
 }
 
 .timer {
-  font-size: 8.8rem;
+  font-size:clamp(4rem, 4rem + 10vw, 8.8rem) ;
   display: flex;
+  margin-bottom: 1.6rem;
 }
 
-main{
-  height: 100vh;
-  display: grid;
-  place-content: center;
-  place-items: center;
-}
+
 button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+button img {
+  width:  clamp(3.2rem, 2rem + 12vw, 6.4rem);
 }
 
 .hide {
@@ -42,14 +49,20 @@ button {
 }
 .controls {
   display: flex;
-  gap: 32px;
-  padding: 22px 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  
   background: var( --bg-primary-light);
   border-radius: 9999px;
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vw, 10.8rem);
 }
 
-.btn-unmute {
-  position: fixed;
-  bottom: 32px;
-  right: 40px;
+
+footer {
+  justify-self: end;
+  align-self: end;
+
+  padding: 0 4rem 3.2rem 0;
 }
