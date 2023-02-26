@@ -30,14 +30,16 @@ export default function events ({controls, timer, sounds}) {
   btnUnmute.addEventListener('click', () => {
     btnUnmute.classList.add('hide')
     btnMute.classList.remove('hide')
-    sounds.bgAudio.play()
+    sounds.bgAudio.pause()
+
     
   })
 
   btnMute.addEventListener('click', () => {
     btnUnmute.classList.remove('hide')
     btnMute.classList.add('hide')
-    sounds.bgAudio.pause()
+    sounds.bgAudio.play()
+
   })
 
   btnTimer.addEventListener('click', () => {
